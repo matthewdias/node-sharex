@@ -1,0 +1,16 @@
+{
+  "Name": "temphoster.com",
+  "DestinationType": "ImageUploader, FileUploader",
+  "RequestType": "POST",
+  "RequestURL": "https://temphoster.com/index.php",
+  "FileFormName": "file",
+  "Arguments": {
+    "album": "0",
+    "agree": "1"
+  },
+  "ResponseType": "Text",
+  "RegexList": [
+    "1(?<url>.+)"
+  ],
+  "URL": "$regex:1,url$"
+}
