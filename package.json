@@ -1,0 +1,28 @@
+{
+  "name": "sharex",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "ln config $HOME/.config/sharex"
+  },
+  "bin": {
+    "sharex": "bin/upload.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewdias/node-sharex.git"
+  },
+  "author": "matthewdias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewdias/node-sharex/issues"
+  },
+  "homepage": "https://github.com/matthewdias/node-sharex#readme",
+  "dependencies": {
+    "clipboardy": "^1.1.0",
+    "commander": "^2.9.0",
+    "ora": "^1.2.0",
+    "request": "^2.81.0",
+    "strip-bom": "^3.0.0"
+  }
+}
