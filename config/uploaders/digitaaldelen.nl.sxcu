@@ -1,0 +1,16 @@
+{
+  "Name": "digitaaldelen.nl",
+  "DestinationType": "ImageUploader, FileUploader",
+  "RequestType": "POST",
+  "RequestURL": "https://digitaaldelen.nl/index.php",
+  "FileFormName": "file",
+  "Arguments": {
+    "album": "0",
+    "agree": "1"
+  },
+  "ResponseType": "Text",
+  "RegexList": [
+    "1(?<url>.+)"
+  ],
+  "URL": "$regex:1,url$"
+}
